@@ -11,6 +11,14 @@
 </head>
 
 <body>
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <h1>Welcome to my first dashboard!</h1>
+            <p>Thank you for taking the time to check out my dashboard design! I hope you enjoy.</p>
+            <button id="close" onclick="document.modal.removeChild(document.getElementById('divbutton'))">Close
+                me</button>
+        </div>
+    </div>
     <div class="main-container">
         <div class="left-container">
             <div class="logo-container">
@@ -225,5 +233,16 @@
         </div>
     </div>
 </body>
+
+<script>
+    const close = document.querySelector('#close');
+
+
+    function closeModal() {
+        document.body.removeChild(document.getElementById('modal_container'));
+    }
+
+    close.addEventListener('click', closeModal);
+</script>
 
 </html>
