@@ -48,6 +48,7 @@
     padding: 1vw;
     padding-left: 5vw;
     padding-right: 5vw;
+    padding-top: 0;
 }
 
 .top-container>div {
@@ -277,6 +278,7 @@ a:hover {
     display: flex;
     gap: 15px;
     flex-direction: column;
+    overflow: auto;
 }
 
 .trending-users {
@@ -299,4 +301,8 @@ a:hover {
     background-color: #334155;
     color: white;
     padding: 10px;
+}
+
+.announcement-inc {
+    padding-bottom: 10px;
 }
